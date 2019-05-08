@@ -13,7 +13,7 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "", redirectTo: "/home", pathMatch: "full" },
-  { path: "ourteam", redirectTo: "home", pathMatch: "full" },
+  { path: "ourteam", redirectTo: "/home", pathMatch: "full" },
   { path: "expertise", component: ExpertiseComponent },
   { path: "joinus", component: JoinUsComponent },
   { path: "contact", component: ContactComponent },
@@ -27,7 +27,8 @@ const routes: Routes = [
     HomeComponent,
     ExpertiseComponent,
     JoinUsComponent,
-    ContactComponent
+    ContactComponent,
+    NotFoundComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes)],
   providers: [],
