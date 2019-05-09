@@ -1,12 +1,12 @@
 <section id="joinus">
-  <div class="container">
-    <div class="row text-center title">
-      <div class="text-center">
-        <h2>WHY JOIN US?</h2>
-        <h3>Experienced players all around the world</h3>
-      </div>
-    </div>
-    <!-- <div class="row items">
+    <div class="container">
+        <div class="row text-center title">
+            <div class="text-center">
+                <h2>WHY JOIN US?</h2>
+                <h3>Experienced players all around the world</h3>
+            </div>
+        </div>
+        <!-- <div class="row items">
       <div class="position-relative">
         <fa-icon [icon]="faChevronCircleLeft" id="left"></fa-icon>
         <fa-icon [icon]="faChevronCircleRight" id="right"></fa-icon>
@@ -17,27 +17,21 @@
         </div>
       </div>
     </div> -->
-    <div class="row owl-carousel">
-      <owl-carousel
-        [options]="{
+        <div class="row" style="overflow:hidden">
+            <owl-carousel [options]="{
           items: 4,
-          navigation: true,
-          loop: true,
-          nav: true
-        }"
-        [items]="images"
-        [carouselClasses]="['owl-theme', 'row', 'sliding']"
-      >
-        <div class="item" *ngFor="let image of images; let i = index">
-          <div>
-            <img src="{{ image }}" class="img-fluid" />
-          </div>
+          loop: true
+        }" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                <div class="item" *ngFor="let image of images; let i = index">
+                    <div>
+                        <img src="{{ image }}" class="img-fluid" />
+                    </div>
+                </div>
+            </owl-carousel>
         </div>
-      </owl-carousel>
+        <div class="text-center">
+            <a href="/ourteam" class="btn">Join Our Team »</a>
+            <small class="text-muted">Selection on basis of Live Matches!</small>
+        </div>
     </div>
-    <div class="text-center">
-      <a href="/ourteam" class="btn">Join Our Team »</a>
-      <small class="text-muted">Selection on basis of Live Matches!</small>
-    </div>
-  </div>
 </section>
