@@ -25,13 +25,13 @@
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
               "./node_modules/bootstrap/scss/bootstrap.scss",
-              "./node_modules/bxslider/dist/jquery.bxslider.css",
+              "./node_modules/owl.carousel/dist/assets/owl.carousel.css",
               "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/owl.carousel/dist/owl.carousel.min.js",
               "./node_modules/popper.js/dist/umd/popper.min.js",
-              "./node_modules/bxslider/dist/jquery.bxslider.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
             ],
             "es5BrowserSupport": true
