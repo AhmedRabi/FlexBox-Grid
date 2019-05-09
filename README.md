@@ -31,3 +31,6 @@ http://www.uigrid.com/demo/gameon-bootstrap/?fbclid=IwAR2hi1HwgHZKS3GQNmMusf8zbn
 
 ## Add Font-Awesome to angular
 https://fontawesome.com/how-to-use/on-the-web/using-with/angular
+
+## Add Owl Carousel
+https://stackoverflow.com/questions/53692267/owl-carousel-in-angular-7?fbclid=IwAR3buYLAkEXFNzCk_OZGpghnRULyyU4xjjLi3-lRF26C53mCquj85PIx0f8

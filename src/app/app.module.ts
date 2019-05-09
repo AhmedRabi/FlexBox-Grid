@@ -1,6 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import{FontAwesomeModule} from "@fortawesome/angular-fontawesome"
+import { OwlModule } from 'ngx-owl-carousel';
 
 import { AppComponent } from "./app.component";
 import { NavBarComponent } from "./nav-bar/nav-bar.component";
@@ -31,7 +32,7 @@ const routes: Routes = [
     ContactComponent,
     NotFoundComponent
   ],
-  imports: [BrowserModule, RouterModule.forRoot(routes),FontAwesomeModule],
+  imports: [BrowserModule, RouterModule.forRoot(routes),FontAwesomeModule,OwlModule],
   providers: [],
   bootstrap: [AppComponent]
 })

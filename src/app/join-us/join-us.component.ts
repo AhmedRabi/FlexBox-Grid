@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./join-us.component.scss']
 })
 export class JoinUsComponent implements OnInit {
-
+  images=["../../assets/one.jpg","../../assets/two.jpg","../../assets/three.jpg","../../assets/four.jpg"];
   constructor() { }
 
   ngOnInit() {
