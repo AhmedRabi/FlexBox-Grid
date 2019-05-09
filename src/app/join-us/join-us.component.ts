@@ -1,5 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 import * as $ from "jquery";
+import {
+  faChevronCircleLeft,
+  faChevronCircleRight
+} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: "app-join-us",
@@ -7,6 +11,9 @@ import * as $ from "jquery";
   styleUrls: ["./join-us.component.scss"]
 })
 export class JoinUsComponent implements OnInit {
+  faChevronCircleLeft = faChevronCircleLeft;
+  faChevronCircleRight = faChevronCircleRight;
+
   images = [
     "../../assets/four.jpg",
     "../../assets/one.jpg",
@@ -18,6 +25,44 @@ export class JoinUsComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    $(document).ready(function() {});
+    $(document).ready(function() {
+      var shiftLeft = function(arr) {
+        var newarr = [];
+        for (let i = 1; i < arr.length; i++) {
+          newarr[i - 1] = arr[i];
+        }
+        newarr.push(arr[0]);
+        return newarr;
+      };
+      var shiftRight = function(arr) {
+        var newarr = [];
+        newarr[0] = arr[arr.length - 1];
+        for (let i = 0; i < arr.length - 1; i++) {
+          newarr[i + 1] = arr[i];
+        }
+        return newarr;
+      };
+
+      var getImages = function() {
+        var imgs = [];
+        for (let i = 1; i <= 6; i++) {
+          imgs.push("img:nth-child(" + i + ")");
+        }
+        return imgs;
+      };
+      var imgs = getImages();
+      $("#left").click(function() {
+        for (let i = 0; i < imgs.length; i++) {
+          $(imgs[i]).animate({ right: "105%" }, 1000);
+        }
+        imgs = shiftLeft(imgs);
+      });
+      $("#right").click(function() {
+        for (let i = 0; i < imgs.length; i++) {
+          $(imgs[i]).animate({ left: "105%" }, 1000);
+        }
+        imgs = shiftRight(imgs);
+      });
+    });
   }
 }

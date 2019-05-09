@@ -4,13 +4,34 @@ section {
     justify-content: center;
     overflow: hidden;
     flex-wrap: nowrap !important;
+    fa-icon {
+      position: relative;
+      color: #858585;
+      font-size: 30px;
+      position: absolute;
+      top: calc(45% - (45px / 2));
+      cursor: pointer;
+      z-index: 10000;
+    }
+    fa-icon:nth-child(1) {
+      //left arrow
+      left: -35px;
+    }
+    fa-icon:nth-child(2) {
+      //right arrow
+      left: calc(70vw - 40px);
+    }
     .slider {
       width: 80%;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
+      overflow: hidden;
       div {
         padding: 5px;
+        img {
+          position: relative;
+        }
       }
     }
   }
