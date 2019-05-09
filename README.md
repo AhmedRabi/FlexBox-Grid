@@ -27,10 +27,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## reference URL
+
 http://www.uigrid.com/demo/gameon-bootstrap/?fbclid=IwAR2hi1HwgHZKS3GQNmMusf8zbnyx9mtIvaDez9jv9SqaPtxSQnA_jyNBM9U
 
 ## Add Font-Awesome to angular
+
 https://fontawesome.com/how-to-use/on-the-web/using-with/angular
 
 ## Add Owl Carousel
+
 https://stackoverflow.com/questions/53692267/owl-carousel-in-angular-7?fbclid=IwAR3buYLAkEXFNzCk_OZGpghnRULyyU4xjjLi3-lRF26C53mCquj85PIx0f8
+
+## Add bxSlider Carousel
+
+https://bxslider.com/install/

@@ -1,22 +1,26 @@
 <section id="joinus">
-    <div class="container">
-        <div class="row">
-            <div class="text-center">
-                <h2>WHY JOIN US?</h2>
-                <h3>Experienced players all around the world</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-8">
-                <owl-carousel [options]="{items:4, dots: false, navigation: false}" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                    <div class="item" *ngFor="let image of images;let i = index">
-                        <div class="thumbnail-image">
-                            <img src="{{image}}" class="img-fluid" />
-                        </div>
-                    </div>
-                </owl-carousel>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <h2>WHY JOIN US?</h2>
+        <h3>Experienced players all around the world</h3>
+      </div>
     </div>
+    <div class="row">
+      <div class="slider">
+        <div class="col-md-3">
+          <img class="img-fluid" src="../../assets/one.jpg" />
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="../../assets/two.jpg" />
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="../../assets/three.jpg" />
+        </div>
+        <div class="col-md-3">
+          <img class="img-fluid" src="../../assets/four.jpg" />
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
